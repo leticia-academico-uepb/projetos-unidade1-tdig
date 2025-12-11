@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    max-height: 70vh;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    height: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007396;
+}
+
+.card h3 {
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007396;
+    color: white;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: 2px solid #007396;
+    font-size: 0.9rem;
+}
+
+.card a:hover {
+    background-color: white;
+    color: #007396;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.tech-tag {
+    background-color: #f0f8ff;
+    color: #a917e1;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+/* Responsividade - Apenas para mobile */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 15px;
+        max-height: none;
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        min-height: 280px;
+        margin-bottom: 0;
+    }
+
+    .card h3 {
+        min-height: auto;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+}
