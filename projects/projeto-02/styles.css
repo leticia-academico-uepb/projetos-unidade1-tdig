@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -38,6 +37,29 @@ li a {
     font-weight: 400;
     margin-right: 25px;
     color: #263138;
+}
+
+.welcome-section {
+    background-color: #f5f7fa;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 9%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    color: #445964;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+h1 {
+    color: #445964;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 55px;
 }
 
 @media screen and (max-width: 600px) {
