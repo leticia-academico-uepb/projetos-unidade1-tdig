@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Roboto';
+    user-select: none;
 }
 
 :root {
@@ -14,14 +15,12 @@
     --text-secundary: #cccccc;
     --text-tertiary: #aaaaaa;
 
-    --accent-primary: #4dabf7;
-    --accent-secondary: #51cf66;
-    --accent-warning: #9b5faa;
+    --accent-primary: #9b5faa;
 }
 
 body {
-    height: 100vh;
     width: 100%;
+    padding-top: 70px;
 }
 
 nav {
@@ -31,7 +30,7 @@ nav {
     z-index: 1000;
     width: 100%;
     background-color: #1c1e21;
-    color: var(--accent-warning);
+    color: var(--accent-primary);
     box-shadow: 0 5px 15px rgba(128, 127, 127, 0.1);
 }
 
@@ -62,12 +61,11 @@ li a {
 .welcome-section {
     background-color: rgb(33 35 37);
     width: 100%;
-    height: 100vh;
-    padding: 80px 9% 20px;
+    min-height: 100vh;
+    padding: 120px 9% 40px;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    margin-top: 70px;
+    align-items: flex-start;
 }
 
 .welcome-left {
@@ -86,11 +84,11 @@ h1 {
     color: var(--text-primary);
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 55px;
+    font-size: clamp(32px, 6vw, 55px);
 }
 
 .icons {
-    margin: 120px 0 0 0;
+    margin-top: 50px;
     display: flex;
     gap: 10px;
 }
@@ -110,7 +108,8 @@ h1 {
 .projects {
     background-color: #1c1e21;
     width: 100%;
-    height: 90vh;
+    min-height: auto;
+    padding-bottom: 60px;
 }
 
 .projects h2 {
@@ -121,20 +120,16 @@ h1 {
 }
 
 .projects-grid {
-    background-color: #1c1e21;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex: 1;
-    max-height: 70vh;
-    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 50px 9%;
 }
 
 .project-tile {
     background-color: rgb(33 35 37);
-    width: 280px;
-    height: 320px;
+    max-width: 280px;
+    min-height: 320px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(107, 107, 107, 0.1);
@@ -144,6 +139,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .project-tile:hover {
@@ -153,8 +149,7 @@ h1 {
 
 .project-tile h3 {
     color: var(--text-secundary);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-size: 1.2rem;
     min-height: 40px;
     display: flex;
@@ -165,22 +160,20 @@ h1 {
 .project-tile p {
     color: var(--text-tertiary);
     line-height: 1.4;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0;
     font-size: 0.8rem;
     flex-grow: 1;
 }
 
 .project-tile a {
     display: inline-block;
-    text-decoration: none;
-    background-color: var(--accent-warning);
+    background-color: var(--accent-primary);
     color: var(--text-primary);
     font-weight: bold;
     padding: 8px 20px;
     border-radius: 50px;
     transition: all 0.3s ease;
-    border: 2px solid var(--accent-warning);
+    border: 2px solid var(--accent-primary);
     font-size: 0.9rem;
 }
 
@@ -191,17 +184,43 @@ h1 {
     justify-content: center;
     margin-bottom: 12px;
 }
+
 .tech-tag {
     background-color: #1c1e21;
-    color: var(--accent-warning);
+    color: var(--accent-primary);
     padding: 3px 8px;
     border-radius: 12px;
     font-size: 0.75rem;
     font-weight: 600;
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        background-color: aqua;
+@media (max-width: 800px) {
+    .welcome-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        min-height: auto;
+        align-items: center;
+    }
+
+    .welcome-right img {
+        margin-right: 0;
+        width: 300px;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    li a {
+        margin-right: 15px;
+        font-size: 16px;
     }
 }
