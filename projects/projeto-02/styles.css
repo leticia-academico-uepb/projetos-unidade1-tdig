@@ -16,7 +16,7 @@
 
     --accent-primary: #4dabf7;
     --accent-secondary: #51cf66;
-    --accent-warning: #007396;
+    --accent-warning: #9b5faa;
 }
 
 body {
@@ -89,21 +89,22 @@ h1 {
     font-size: 55px;
 }
 
-.redes {
+.icons {
     margin: 120px 0 0 0;
     display: flex;
-    gap: 18px;
+    gap: 10px;
 }
 
-.redes img {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
+.icons svg {
+    width: 35px;
+    height: 35px;
+    color: var(--text-tertiary);
 }
 
 .welcome-right img {
-    width: 500px;
+    width: 450px;
     max-width: 100%;
+    margin-right: 30px;
 }
 
 .projects {
