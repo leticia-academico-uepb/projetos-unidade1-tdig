@@ -11,46 +11,71 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Please rate our service and help us improve our customers' experience.</p>
 
-    <form id="survey-form" method="post" action="#">
+    <div>
+      <form id="survey-form" method="post" action="#">
+          <fieldset>
+              <label id="name-label" for="name">
+                Enter Your Name: 
+                <input id="name" name="name" type="text" placeholder="Enter your name" required />
+              </label>
+
+              <label id="email-label" for="email">
+                Enter Your Email: 
+                <input id="email" name="email" type="email" placeholder="Enter your email" required />
+              </label>
+              
+              <label id="number-label" for="number">
+                Input your age (years): 
+                <input id="number" type="number" name="age" min="13" max="120" placeholder="Enter your age" required />
+              </label>
+              
+              <label for="dropdown">
+                  On a scale of 1 to 5 - where 1 is not very satisfied and 5 is very satisfied - how would you rate our service?
+                  <select id="dropdown" name="rating" required>
+                      <option value="">(select one)</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </select>
+              </label>
+        </fieldset>
+
         <fieldset>
-            <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
-            <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
-            <label id="number-label" for="number">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="Enter your age" required /></label>
-            
-            <label for="dropdown">
-                On a scale of 1 to 5 - where 1 is not very satisfied and 5 is very satisfied - how would you rate our service?
-                <select id="dropdown" name="rating" required>
-                    <option value="">(select one)</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </label>
-       </fieldset>
+          <legend>Would you recommend our establishment to more people?</legend>
+          <label for="yes"><input id="yes" type="radio" name="recommend" value="yes" checked /> Yes</label>
+          <label for="no"><input id="no" type="radio" name="recommend" value="no"/> No</label>
+        </fieldset>
 
-       <fieldset>
-        <legend>Would you recommend our establishment to more people?</legend>
-        <label for="yes"><input id="yes" type="radio" name="recommend" value="yes" checked /> Yes</label>
-        <label for="no"><input id="no" type="radio" name="recommend" value="no"/> No</label>
-      </fieldset>
+        <fieldset>
+          <legend>What aspects of our service did you like the most?</legend>
+          <label for="service">
+            <input id="service" value="service" type="checkbox" name="liked" />
+            Customer service
+          </label>
+          <label for="speed">
+            <input id="speed" value="speed" type="checkbox" name="liked" />
+            Speed of service
+          </label>
+          <label for="quality">
+            <input id="quality" value="quality" type="checkbox" name="liked" />
+            Quality of the product
+          </label>
+          <label for="price">
+            <input id="price" value="price" type="checkbox" name="liked" />
+            Price
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <legend>What aspects of our service did you like the most?</legend>
-        <label for="service"> <input id="service" value="service" type="checkbox" name="liked" /> Customer service</label>
-        <label for="speed"> <input id="speed" value="speed" type="checkbox" name="liked" /> Speed of service</label>
-        <label for="quality"> <input id="quality" value="quality" type="checkbox" name="liked" /> Quality of the product</label>
-        <label for="price"> <input id="price" value="price" type="checkbox" name="liked" /> Price</label>
-      </fieldset>
+        <label for="comment">
+          Would you like to add any comments about your experience with us?
+          <textarea id="comment" name="comment" rows="3" cols="30" placeholder="..."></textarea>
+        </label>
 
-      <label for="comment">
-        Would you like to add any comments about your experience with us?
-        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="..."></textarea>
-      </label>
-
-      <input type="submit" id="submit" value="Submit" />  
-    </form>
+        <input type="submit" id="submit" value="Submit" />  
+      </form>
+    </div>
     
 </body>
 </html>
