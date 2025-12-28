@@ -1,336 +1,224 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Impressoras</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<html lang="pt-BR" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catálogo de Impressoras</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="toggle.js"></script>
+    </head>
 
-<body>
+    <body>
+        <header id="header">
+            <img id="header-img" src="../../docs/images/printing-machine.png" alt="Logo Impressora" />
 
-    <header id="header">
-        <img 
-        id="header-img" 
-        src="../../docs/images/printing-machine.png"
-        alt="Logo Impressora"
-        >
+            <nav id="nav-bar">
+                <a href="#section1" class="nav-link">Diferenciais</a>
+                <a href="#section2" class="nav-link">Novidades</a>
+                <a href="#section3" class="nav-link">Categorias</a>
+            </nav>
 
-        <nav id="nav-bar">
-        <a href="#section1" class="nav-link">Diferenciais</a>
-        <a href="#section2" class="nav-link">Novidades</a>
-        <a href="#section3" class="nav-link">Categorias</a>
-        </nav>
-    </header>
+            <button id="toggle-theme">🌙</button>
+        </header>
 
-    <main>
-        <!-- Seção 1 -->
-        <section id="section1">
-            <div class="diferenciais">
-                <img 
-                class="diferenciais-img" 
-                src="../../docs/images/engineering.png"
-                alt="Engenharia"
-                >
-                <div class="desc">
-                    <h2>Precisão de Engenharia</h2>
-                    <p>
-                        Com o auxílio de nossas tecnologias compactas, precisas e eficientes, criamos soluções projetadas especificamente para ajudar a impulsionar as metas organizacionais.
-                    </p>
-                </div>
-            </div>
-
-            <div class="diferenciais">
-                <img 
-                class="diferenciais-img" 
-                src="../../docs/images/talent-management.png"
-                alt="Expertise"
-                >
-                <div class="desc">
-                    <h2>Expertise Consolidada</h2>
-                    <p>
-                        Há mais de 80 anos, temos fornecido às organizações produtos resistentes que superam as expectativas e são projetados para serem confiáveis.
-                    </p>
-                </div>
-            </div>
-
-            <div class="diferenciais">
-                <img 
-                class="diferenciais-img" 
-                src="../../docs/images/partners.png"
-                alt="Parcerias"
-                >
-                <div class="desc">
-                    <h2>Parcerias Colaborativas</h2>
-                    <p>
-                        Trabalhamos em estreita colaboração com as organizações para entender suas necessidades específicas e selecionar o melhor serviço e suporte possível.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção 2 -->
-        <section id="section2">
-        <h2>Conheça nossas novas impressoras corporativas compactas!</h2>
-        <!-- "https://www.youtube.com/embed/0KTMB15hF8E" -->
-        <iframe
-            id="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/WemRgSdBSRA"
-            title="As Impressoras Empresariais jato de tinta Epson WorkForce® são Toner Free"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-        </section>
-
-        <!-- Seção 3 -->
-        <section id="section3">
-            <h2>Impressoras Para o Trabalho</h2>
-            <h3>Para todos os tipos de negócios e escritórios</h3>
-            <p>Nossas soluções para os locais de trabalho beneficiam negócios, empresas e indústrias de todos os tamanhos.</p>
-
-            <section class="categorias" id="trabalho">
-                <div class="impressora">
-                    <div class="modelo">Impressoras WorkForce®</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/09bb67b89a80fd33b69fb624d5179dd3d73e6e1c/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_WF-2960_fg_tile_1140x900"
-                    >
-                    <p>
-                        Conheça nossas impressoras corporativas de alta performance para uso em home office ou pequenos escritórios.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/c/w1?q=%3Aprice-asc%3AdiscontinuedFlag%3Afalse%3APrinters+Facets%2CPrinter+Series%3AWorkForce+M~102Series%3APrinters+Facets%2CPrinter+Series%3AWorkForce+WF~102Series&text=#scrollTgt_onRefresh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
+        <main>
+            <!-- Seção 1 -->
+            <section id="section1">
+                <div class="diferenciais">
+                    <img class="diferenciais-img" src="../../docs/images/engineering.png" alt="Engenharia" />
+                    <div class="desc">
+                        <h2>Precisão de Engenharia</h2>
+                        <p>Com o auxílio de nossas tecnologias compactas, precisas e eficientes, criamos soluções projetadas especificamente para ajudar a impulsionar as metas organizacionais.</p>
+                    </div>
                 </div>
 
-                <div class="impressora">
-                    <div class="modelo">Impressoras WorkForce Pro</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/51729e8bb00b807eb20b5ddb24a3f423edd5b445/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_WF-C5890_fg_tile_1140x900"
-                    >
-                    <p>
-                        Experimente configurações individuais ou multifunção, altíssimo rendimento de tinta e baixo custo de impressão.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/c/w1?q=%3Aprice-asc%3AdiscontinuedFlag%3Afalse%3APrinters+Facets%2CPrinter+Series%3AWorkForce+Pro+WF~102Series&text=#scrollTgt_onRefresh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
+                <div class="diferenciais">
+                    <img class="diferenciais-img" src="../../docs/images/talent-management.png" alt="Expertise" />
+                    <div class="desc">
+                        <h2>Expertise Consolidada</h2>
+                        <p>Há mais de 80 anos, temos fornecido às organizações produtos resistentes que superam as expectativas e são projetados para serem confiáveis.</p>
+                    </div>
                 </div>
 
-                <div class="impressora">
-                    <div class="modelo">Impressoras WorkForce Enterprise</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/1e878cd4ca652053b3fbf1465e76f0738075a30d/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_WF-C21000_fg_tile_1140x900"
-                    >
-                    <p>
-                        Revolucione sua produtividade empresarial com velocidades impressionantes e suprimentos de alta capacidade.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/workforce-enterprise"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
-                </div>
-
-                <div class="impressora">
-                    <div class="modelo">Impressoras de Pontos de Venda</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/31cb85d7d5a00620d216cbfda3120d1ca671b1aa/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_point-of-sale"
-                    >
-                    <p>
-                        Encontre robustas e avançadas tecnologias para pontos de venda. Nossas funcionalidades com valor agregado vão ajudar o seu negócio se tornar cada vez mais eficiente.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/c/w7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
-                </div>
-
-                <div class="impressora">
-                    <div class="modelo">Rotuladoras comerciais ColorWorks™</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/f8110c5cd1166e69a8a1e645e18422a8e74a0fc6/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_commercial-label"
-                    >
-                    <p>
-                        Aumente a produtividade e reduza custos utilizando rótulos impressos com ColorWorks. Tenha ao seu dispor impressões comerciais confiáveis, com secagem rápida e tintas resistentes.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/colorworks-impressao-de-etiquetas-coloridas"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
-                </div>
-
-                <div class="impressora">
-                    <div class="modelo">Impressoras de Grande Formato</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/ce622a8aa63eac34bc79aa6650ea598741335bdb/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_pro-imaging"
-                    >
-                    <p>
-                        Visualize suas ideias e crie as mais variadas impressões, desde fotografias até comunicação visual e estamparia digital têxtil.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/c/w140"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
-                </div>
-
-                <div class="impressora">
-                    <div class="modelo">Impressoras Matriciais</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/5381dcafc7db9718953b37d69c9ca0f7b059c384/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_impact-ptrs"
-                    >
-                    <p>
-                        Integre facilmente as suas impressoras matriciais com o ambiente de trabalho. Disponíveis em grande variedade de formatos.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/c/w160"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
-                </div>
-
-                <div class="impressora">
-                    <div class="modelo">Impressoras DiscProducer</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/a47de788e872c4b7f5dbb660106d486ff5a02ac0/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_disc-producer"
-                    >
-                    <p>
-                        Encontre impressoras de discos de baixo custo para o seu negócio, organização ou escritório de serviços profissionais.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/c/w110?q=%3Aprice-asc%3AdiscontinuedFlag%3Afalse%3APrinters+Facets%2CPrinter+Series%3ADiscproducer&text=#scrollTgt_onRefresh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
-                </div>                
-            </section>
-
-            <h2>Impressoras para Casa</h2>
-            <h3>Família. Criatividade. Entretenimento.</h3>
-            <p>Conheça todas as formas pelas quais a Epson permite a você transformar ideias em realidade.</p>
-
-            <section class="categorias" id="casa">
-                <div class="impressora">
-                    <div class="modelo">Impressora EcoTank L1250</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/050579681ebb9915312e7dd557dd6d97a852ba3e/original?use=productpictures&hybrisId=B2C&assetDescr=latin-ecotank-product-tile_L1250"
-                    >
-                    <p>
-                        A EcoTank L1250 é uma impressora tanque de tinta Wi-Fi compacta que imprime com baixo custo de impressão.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/Para-casa/Impressoras/Impressoras-jato-de-tinta/Impressora-Wi-Fi-Epson-EcoTank%C2%AE-L1250/p/C11CJ71302BR"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
-                </div>
-
-                <div class="impressora">
-                    <div class="modelo">Impressora EcoTank L3250</div>
-                    <img
-                        class="impressora-img" 
-                        src="https://mediaserver.goepson.com/ImConvServlet/imconv/70422a326238f1a8e96c405befdc75da03b052bd/original?use=productpictures&hybrisId=B2C&assetDescr=latin-ecotank-product-tile_L3250_L3251"
-                    >
-                    <p>
-                        A EcoTank L3250 é uma multifuncional tanque de tinta 3 em 1 compacta que imprime, copia e digitaliza com baixo custo de impressão.
-                    </p>
-                    <a 
-                    class="btn" 
-                    href="https://epson.com.br/Para-casa/Impressoras/Impressoras-jato-de-tinta/Impressora-Multifuncional-3-em-1-Epson-EcoTank%C2%AE-L3250/p/C11CJ67303"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Saiba mais
-                    </a>
+                <div class="diferenciais">
+                    <img class="diferenciais-img" src="../../docs/images/partners.png" alt="Parcerias" />
+                    <div class="desc">
+                        <h2>Parcerias Colaborativas</h2>
+                        <p>Trabalhamos em estreita colaboração com as organizações para entender suas necessidades específicas e selecionar o melhor serviço e suporte possível.</p>
+                    </div>
                 </div>
             </section>
-        </section>
 
-        <!-- Formulário -->
-        <section id="signup">
-            <h2>Receba novidades</h2>
+            <!-- Seção 2 -->
+            <section id="section2">
+                <h2>Conheça nossas novas impressoras corporativas compactas!</h2>
+                <!-- "https://www.youtube.com/embed/0KTMB15hF8E" -->
+                <iframe
+                    id="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/WemRgSdBSRA"
+                    title="As Impressoras Empresariais jato de tinta Epson WorkForce® são Toner Free"
+                    frameborder="0"
+                    allowfullscreen></iframe>
+            </section>
 
-            <form 
-                id="form" 
-                action="https://www.freecodecamp.com/email-submit"
-                method="post"
-            >
-                <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu e-mail"
-                required
-                >
+            <!-- Seção 3 -->
+            <section id="section3">
+                <h2>Impressoras Para o Trabalho</h2>
+                <h3>Para todos os tipos de negócios e escritórios</h3>
+                <p>Nossas soluções para os locais de trabalho beneficiam negócios, empresas e indústrias de todos os tamanhos.</p>
 
-                <input
-                type="submit"
-                id="submit"
-                class="btn"
-                value="Enviar"
-                >
-            </form>
-        </section>
+                <section class="categorias" id="trabalho">
+                    <div class="impressora">
+                        <div class="modelo">Impressoras WorkForce®</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/09bb67b89a80fd33b69fb624d5179dd3d73e6e1c/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_WF-2960_fg_tile_1140x900" />
+                        <p>Conheça nossas impressoras corporativas de alta performance para uso em home office ou pequenos escritórios.</p>
+                        <a
+                            class="btn"
+                            href="https://epson.com.br/c/w1?q=%3Aprice-asc%3AdiscontinuedFlag%3Afalse%3APrinters+Facets%2CPrinter+Series%3AWorkForce+M~102Series%3APrinters+Facets%2CPrinter+Series%3AWorkForce+WF~102Series&text=#scrollTgt_onRefresh"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Saiba mais
+                        </a>
+                    </div>
 
-    </main>
+                    <div class="impressora">
+                        <div class="modelo">Impressoras WorkForce Pro</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/51729e8bb00b807eb20b5ddb24a3f423edd5b445/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_WF-C5890_fg_tile_1140x900" />
+                        <p>Experimente configurações individuais ou multifunção, altíssimo rendimento de tinta e baixo custo de impressão.</p>
+                        <a
+                            class="btn"
+                            href="https://epson.com.br/c/w1?q=%3Aprice-asc%3AdiscontinuedFlag%3Afalse%3APrinters+Facets%2CPrinter+Series%3AWorkForce+Pro+WF~102Series&text=#scrollTgt_onRefresh"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Saiba mais
+                        </a>
+                    </div>
 
-</body>
+                    <div class="impressora">
+                        <div class="modelo">Impressoras WorkForce Enterprise</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/1e878cd4ca652053b3fbf1465e76f0738075a30d/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_WF-C21000_fg_tile_1140x900" />
+                        <p>Revolucione sua produtividade empresarial com velocidades impressionantes e suprimentos de alta capacidade.</p>
+                        <a class="btn" href="https://epson.com.br/workforce-enterprise" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                    </div>
 
-<footer class="site-footer">
-    <p>
-        Informações e descrições dos produtos retiradas do site oficial da
-        <a 
-        href="https://www.epson.com.br" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        >
-        Epson Brasil
-        </a>.
-        Este site tem fins exclusivamente educacionais.
-    </p>
-</footer>
+                    <div class="impressora">
+                        <div class="modelo">Impressoras de Pontos de Venda</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/31cb85d7d5a00620d216cbfda3120d1ca671b1aa/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_point-of-sale" />
+                        <p>Encontre robustas e avançadas tecnologias para pontos de venda. Nossas funcionalidades com valor agregado vão ajudar o seu negócio se tornar cada vez mais eficiente.</p>
+                        <a class="btn" href="https://epson.com.br/c/w7" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                    </div>
 
+                    <div class="impressora">
+                        <div class="modelo">Rotuladoras comerciais ColorWorks™</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/f8110c5cd1166e69a8a1e645e18422a8e74a0fc6/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_commercial-label" />
+                        <p>
+                            Aumente a produtividade e reduza custos utilizando rótulos impressos com ColorWorks. Tenha ao seu dispor impressões comerciais confiáveis, com secagem rápida e tintas
+                            resistentes.
+                        </p>
+                        <a class="btn" href="https://epson.com.br/colorworks-impressao-de-etiquetas-coloridas" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                    </div>
+
+                    <div class="impressora">
+                        <div class="modelo">Impressoras de Grande Formato</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/ce622a8aa63eac34bc79aa6650ea598741335bdb/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_pro-imaging" />
+                        <p>Visualize suas ideias e crie as mais variadas impressões, desde fotografias até comunicação visual e estamparia digital têxtil.</p>
+                        <a class="btn" href="https://epson.com.br/c/w140" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                    </div>
+
+                    <div class="impressora">
+                        <div class="modelo">Impressoras Matriciais</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/5381dcafc7db9718953b37d69c9ca0f7b059c384/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_impact-ptrs" />
+                        <p>Integre facilmente as suas impressoras matriciais com o ambiente de trabalho. Disponíveis em grande variedade de formatos.</p>
+                        <a class="btn" href="https://epson.com.br/c/w160" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                    </div>
+
+                    <div class="impressora">
+                        <div class="modelo">Impressoras DiscProducer</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/a47de788e872c4b7f5dbb660106d486ff5a02ac0/original?use=productpictures&hybrisId=B2C&assetDescr=printer-seo_disc-producer" />
+                        <p>Encontre impressoras de discos de baixo custo para o seu negócio, organização ou escritório de serviços profissionais.</p>
+                        <a
+                            class="btn"
+                            href="https://epson.com.br/c/w110?q=%3Aprice-asc%3AdiscontinuedFlag%3Afalse%3APrinters+Facets%2CPrinter+Series%3ADiscproducer&text=#scrollTgt_onRefresh"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Saiba mais
+                        </a>
+                    </div>
+                </section>
+
+                <h2>Impressoras para Casa</h2>
+                <h3>Família. Criatividade. Entretenimento.</h3>
+                <p>Conheça todas as formas pelas quais a Epson permite a você transformar ideias em realidade.</p>
+
+                <section class="categorias" id="casa">
+                    <div class="impressora">
+                        <div class="modelo">Impressora EcoTank L1250</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/050579681ebb9915312e7dd557dd6d97a852ba3e/original?use=productpictures&hybrisId=B2C&assetDescr=latin-ecotank-product-tile_L1250" />
+                        <p>A EcoTank L1250 é uma impressora tanque de tinta Wi-Fi compacta que imprime com baixo custo de impressão.</p>
+                        <a
+                            class="btn"
+                            href="https://epson.com.br/Para-casa/Impressoras/Impressoras-jato-de-tinta/Impressora-Wi-Fi-Epson-EcoTank%C2%AE-L1250/p/C11CJ71302BR"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Saiba mais
+                        </a>
+                    </div>
+
+                    <div class="impressora">
+                        <div class="modelo">Impressora EcoTank L3250</div>
+                        <img
+                            class="impressora-img"
+                            src="https://mediaserver.goepson.com/ImConvServlet/imconv/70422a326238f1a8e96c405befdc75da03b052bd/original?use=productpictures&hybrisId=B2C&assetDescr=latin-ecotank-product-tile_L3250_L3251" />
+                        <p>A EcoTank L3250 é uma multifuncional tanque de tinta 3 em 1 compacta que imprime, copia e digitaliza com baixo custo de impressão.</p>
+                        <a
+                            class="btn"
+                            href="https://epson.com.br/Para-casa/Impressoras/Impressoras-jato-de-tinta/Impressora-Multifuncional-3-em-1-Epson-EcoTank%C2%AE-L3250/p/C11CJ67303"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Saiba mais
+                        </a>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Formulário -->
+            <section id="signup">
+                <h2>Receba novidades</h2>
+
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+
+                    <input type="submit" id="submit" class="btn" value="Enviar" />
+                </form>
+            </section>
+        </main>
+    </body>
+
+    <footer class="site-footer">
+        <p>
+            Informações e descrições dos produtos retiradas do site oficial da
+            <a href="https://www.epson.com.br" target="_blank" rel="noopener noreferrer">Epson Brasil</a>
+            . Este site tem fins exclusivamente educacionais.
+        </p>
+    </footer>
 </html>
