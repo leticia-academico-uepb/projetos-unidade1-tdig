@@ -6,7 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Roboto;
-    /*user-select: none;*/
+    user-select: none;
 }
 
 :root {
@@ -43,6 +43,8 @@
     --border: #171717;
 }
 
+/* HEADER */
+
 #header {
     position: fixed;
     top: 0;
@@ -77,6 +79,40 @@
     color: white;
 }
 
+#toggle-theme {
+    position: fixed;
+    top: 14px; /* distância do topo */
+    right: 18px; /* distância da direita */
+    z-index: 1000;
+
+    background: #2b2e34;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#toggle-theme:hover {
+    background: #3a3f46;
+    transform: scale(1.1);
+}
+
+#toggle-theme:active {
+    transform: scale(0.95);
+}
+
+/*CONTEÚDO*/
+
 main {
     padding-top: 90px;
     background-color: var(--bg-1);
@@ -99,6 +135,8 @@ section {
     width: 100%;
     margin: auto;
 }
+
+/*SECTION 1*/
 
 #section1 {
     max-width: 1000px;
@@ -135,6 +173,8 @@ section {
     padding: 5px 0 0 10px;
 }
 
+/*SECTION 2*/
+
 #section2 h2 {
     text-align: center;
 }
@@ -146,6 +186,8 @@ section {
     display: block;
     margin: 20px auto;
 }
+
+/*SECTION 3*/
 
 #section3 {
     background-color: #121212;
@@ -234,6 +276,8 @@ section {
     bottom: 2px;
 }
 
+/*SECTION 4 -  SIGNUP*/
+
 #signup {
     min-height: 60vh;
     text-align: center;
@@ -318,6 +362,8 @@ form {
     font-weight: 500;
 }
 
+/*FOOTER*/
+
 .site-footer {
     background-color: var(--bg-2);
     padding: 20px;
@@ -331,37 +377,7 @@ form {
     font-weight: bold;
 }
 
-#toggle-theme {
-    position: fixed; /* flutua sempre */
-    top: 14px; /* distância do topo */
-    right: 18px; /* distância da direita */
-    z-index: 1000;
-
-    background: #2b2e34; /* grafite */
-    color: #ffffff; /* mantém emoji visível */
-    border: none;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    font-size: 20px;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-#toggle-theme:hover {
-    background: #3a3f46; /* leve destaque */
-    transform: scale(1.1);
-}
-
-#toggle-theme:active {
-    transform: scale(0.95);
-}
+/* @MEDIA*/
 
 @media (max-width: 600px) {
     #header {
