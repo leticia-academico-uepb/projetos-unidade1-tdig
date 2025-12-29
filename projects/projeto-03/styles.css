@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: Roboto;
 }
 
 :root {
     --color-primary: #003f98;
 
-    --bg-1: #ffffff;
-    --bg-2: #f5f5f5;
+    --bg-1: #f0f0f0;
+    --bg-2: #cccccc;
 
     --text-1: #1a1a1a;
     --text-2: #424242;
@@ -39,13 +43,13 @@
     z-index: 1000;
 }
 
-#header-img {
-    height: 50px;
+.header-logo {
+    display: flex;
+    align-items: center;
 }
 
-main {
-    margin-top: 90px;
-    background-color: var(--bg-1);
+#header-img {
+    height: 50px;
 }
 
 #nav-bar {
@@ -57,10 +61,31 @@ main {
     color: white;
 }
 
+main {
+    padding-top: 90px;
+    background-color: var(--bg-1);
+}
+
+main h2 {
+    color: var(--text-1);
+}
+
+main h3 {
+    color: var(--text-2);
+}
+
+main p {
+    color: var(--text-3);
+}
+
 section {
     padding: 40px 20px;
     max-width: 900px;
     margin: auto;
+}
+
+#section2 h2 {
+    text-align: center;
 }
 
 .diferenciais-img {
@@ -108,7 +133,14 @@ section {
     margin: 10px 0;
     border: 0.5 px solid var(--text-3);
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #cccccc;
+}
+
+.impressora p {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #666666;
 }
 
 .modelo {
@@ -147,4 +179,9 @@ form {
     text-align: center;
     font-size: 14px;
     color: var(--text-3);
+}
+
+.site-footer a {
+    color: var(--text-2);
+    font-weight: bold;
 }
