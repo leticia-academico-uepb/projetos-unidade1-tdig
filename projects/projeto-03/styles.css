@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Roboto;
+    user-select: none;
 }
 
 :root {
@@ -97,10 +98,49 @@ section {
 
 #section1 {
     max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.diferenciais-img {
+    height: 50px;
+}
+
+.diferenciais {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.desc h2 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.desc p {
+    line-height: 1.5;
+    padding: 5px 0 0 10px;
 }
 
 #section2 h2 {
     text-align: center;
+}
+
+#video {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    display: block;
+    margin: 20px auto;
 }
 
 #section3 {
@@ -117,32 +157,6 @@ section {
 
 #section3 p {
     color: var(--text-section3-3);
-}
-
-.diferenciais-img {
-    height: 50px;
-}
-
-.diferenciais {
-    display: flex;
-    gap: 10px;
-}
-
-.desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 125px;
-    width: 80vw;
-    gap: 10px;
-}
-
-#video {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-    display: block;
-    margin: 20px auto;
 }
 
 .categorias {
@@ -270,5 +284,17 @@ form {
     li a {
         margin-right: 15px;
         font-size: 16px;
+    }
+
+    #section1 {
+        padding: 30px 30px 20px 30px;
+    }
+
+    #section2 {
+        padding: 40px 15px;
+    }
+
+    #section2 h2 {
+        font-size: 1.3em;
     }
 }
