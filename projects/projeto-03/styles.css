@@ -6,12 +6,13 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Roboto;
-    user-select: none;
+    /*user-select: none;*/
 }
 
 :root {
     --color-primary: #003f98;
 
+    --bg-0: #f6f4f4;
     --bg-1: #f0f0f0;
     --bg-2: #cccccc;
 
@@ -20,6 +21,7 @@
     --text-3: #666666;
 
     --shadow: #1a1a1a;
+    --border: #cccccc;
 
     --text-section3-1: #f0f0f0;
     --text-section3-2: #cccccc;
@@ -29,6 +31,7 @@
 [data-theme='dark'] {
     --color-primary: #003f98;
 
+    --bg-0: #282828;
     --bg-1: #1e1e1e;
     --bg-2: #121212;
 
@@ -37,6 +40,7 @@
     --text-3: #aaaaaa;
 
     --shadow: #090909;
+    --border: #171717;
 }
 
 #header {
@@ -149,14 +153,23 @@ section {
 
 #section3 h2 {
     color: var(--text-section3-1);
+    font-size: 2.5em;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-weight: 800;
 }
 
 #section3 h3 {
     color: var(--text-section3-2);
+    font-size: 1.4em;
+    padding-left: 10px;
+    font-weight: 600;
 }
 
-#section3 p {
+.section3-p {
     color: var(--text-section3-3);
+    padding: 2px 0 0 10px;
+    font-size: 1.2em;
 }
 
 .categorias {
@@ -167,6 +180,7 @@ section {
     overflow-y: hidden;
     flex-wrap: nowrap;
     scroll-behavior: smooth;
+    padding-top: 5px;
 }
 
 .impressora {
@@ -184,9 +198,10 @@ section {
 }
 
 .impressora p {
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     padding: 0 15px 15px 15px;
+    color: var(--text-section3-3);
 }
 
 .modelo {
@@ -221,12 +236,86 @@ section {
 
 #signup {
     min-height: 60vh;
+    text-align: center;
+    padding: 30px 5px 5px 5px;
+    border-radius: 12px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#signup h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+#signup h4 {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    color: var(--text-3);
+    font-weight: 500;
+}
+
+#signup p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+#signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 form {
     display: flex;
-    gap: 10px;
-    width: 100%;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px;
+    margin-top: 45px;
+}
+
+#form h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.email {
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border);
+    font-family: Roboto;
+    padding: 6px;
+    outline: none;
+    background-color: var(--bg-0);
+    color: var(--text-3);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.submit {
+    width: 400px;
+    height: 35px;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 2px;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    padding: 6px 20px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#signup input::placeholder {
+    color: var(--text-3);
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .site-footer {
