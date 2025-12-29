@@ -154,21 +154,21 @@ section {
 #section3 h2 {
     color: var(--text-section3-1);
     font-size: 2.5em;
-    padding-left: 10px;
-    margin-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 50px;
     font-weight: 800;
 }
 
 #section3 h3 {
     color: var(--text-section3-2);
     font-size: 1.4em;
-    padding-left: 10px;
+    padding-left: 20px;
     font-weight: 600;
 }
 
 .section3-p {
     color: var(--text-section3-3);
-    padding: 2px 0 0 10px;
+    padding: 2px 0 0 20px;
     font-size: 1.2em;
 }
 
@@ -188,7 +188,7 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    flex: 0 0 280px;
+    flex: 0 0 300px;
     margin: 10px 0;
     border: 0.5 px solid var(--text-3);
     border-radius: 6px;
@@ -274,7 +274,7 @@ form {
     display: flex;
     align-items: center;
     gap: 20px;
-    max-width: 600px;
+    max-width: 500px;
     margin: 20px;
     margin-top: 45px;
 }
@@ -285,7 +285,7 @@ form {
 }
 
 .email {
-    width: 400px;
+    width: 360px;
     height: 40px;
     border-radius: 8px;
     border: 1.5px solid var(--border);
@@ -299,7 +299,7 @@ form {
 }
 
 .submit {
-    width: 400px;
+    width: 360px;
     height: 35px;
     color: #ffffff;
     border-radius: 8px;
@@ -334,7 +334,7 @@ form {
 #toggle-theme {
     position: fixed; /* flutua sempre */
     top: 14px; /* distância do topo */
-    right: 14px; /* distância da direita */
+    right: 18px; /* distância da direita */
     z-index: 1000;
 
     background: #2b2e34; /* grafite */
@@ -375,6 +375,10 @@ form {
         font-size: 16px;
     }
 
+    #toggle-theme {
+        right: 14px;
+    }
+
     #section1 {
         padding: 30px 30px 20px 30px;
     }
@@ -385,5 +389,13 @@ form {
 
     #section2 h2 {
         font-size: 1.3em;
+    }
+
+    .section3-p {
+        font-size: 1em;
+    }
+
+    #signup {
+        padding: 40px 30px;
     }
 }
