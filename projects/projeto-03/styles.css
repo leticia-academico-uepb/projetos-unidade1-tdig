@@ -18,6 +18,8 @@
     --text-2: #424242;
     --text-3: #666666;
 
+    --shadow: #1a1a1a;
+
     --text-section3-1: #f0f0f0;
     --text-section3-2: #cccccc;
     --text-section3-3: #666666;
@@ -32,6 +34,8 @@
     --text-1: #f0f0f0;
     --text-2: #cccccc;
     --text-3: #aaaaaa;
+
+    --shadow: #090909;
 }
 
 #header {
@@ -43,13 +47,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 80px 10px 30px;
     z-index: 1000;
+    box-shadow: 0 1px 7px var(--shadow);
 }
 
 .header-logo {
     display: flex;
     align-items: center;
+    font-size: 1.3em;
 }
 
 #header-img {
@@ -59,6 +65,7 @@
 #nav-bar {
     display: flex;
     gap: 20px;
+    font-size: 1.1em;
 }
 
 .nav-link {
@@ -219,4 +226,49 @@ form {
 .site-footer a {
     color: var(--text-2);
     font-weight: bold;
+}
+
+#toggle-theme {
+    position: fixed; /* flutua sempre */
+    top: 14px; /* distância do topo */
+    right: 14px; /* distância da direita */
+    z-index: 1000;
+
+    background: #2b2e34; /* grafite */
+    color: #ffffff; /* mantém emoji visível */
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#toggle-theme:hover {
+    background: #3a3f46; /* leve destaque */
+    transform: scale(1.1);
+}
+
+#toggle-theme:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        padding: 7px 30px 10px 30px;
+        gap: 10px;
+    }
+
+    li a {
+        margin-right: 15px;
+        font-size: 16px;
+    }
 }
